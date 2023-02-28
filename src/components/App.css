@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.carouselText {
+    background-color: #FF8E7B;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'Tilt Warp', cursive;
+}
+
+.icon {
+    width: 45px;
+}
+
+.iconCart {
+    width: 50px;
+}
+
+.contador {
+    position: absolute;
+    background-color: #FF77AB;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    top: 100px;
+    right: 40px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.lista {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #495057;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    z-index: 2;
+}
+
+.hover {
+    display: none;
+}
+
+.lista:hover>img {
+    display: block;
+    position: absolute;
+    padding-top: 30px;
+    z-index: 1;
+}
+
+.lista:hover>a {
+    color: #F88F8F;
+}
+
+.desplegable {
+    display: none;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+.categories:hover>ul {
+    display: block;
+    position: absolute;
+    top: 220px;
+    right: 0;
+}
+
+.aparicion-info {
+    animation-duration: 0.3s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: img-aparece;
+}
+
+@keyframes img-aparece {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+ol,
+ul {
+    padding-left: 0rem;
+}
+
+.secciones {
+    width: 200px;
+}
+
+.carousel {
+    z-index: -1;
+}
+
+.encabezado {
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    color: #FF8E7B;
+    border-bottom: 1px solid #FF8E7B;
+}
+
+.btn-grad {
+    background-image: linear-gradient(to right, #C9FFBF 0%, #FFAFBD  51%, #C9FFBF  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    text-decoration: none;
+}
+ 
+
+.btn-grad:hover>a{
+    color: #FFFFFF;
+}
+
+.botonDetail{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    color: #F88F8F;
+    font-weight: bold;
+}
+
+.item-img{
+    width: 300px;
+}
+
+.item-img {
+    border: 2px solid rgb(220, 219, 218, 0.5);
+    box-shadow: 6px 6px 6px -3px rgba(0, 0, 0, 0.1);
+    padding: 0;
+}
+
+.item-button{
+    opacity: 0;
+    position: relative;
+    bottom: 80px;
+    left: 45px;
+}
+
+.aparicion-info-item {
+    animation-duration: 0.3s;
+}
+
+.item-container:hover > button{
+    opacity: 1;
+}
+.item-container{
+    width: 300px;
+    height: 450px;
+}
+
+.item-p{
+    position: relative;
+    top: -30px;
+}
+
+.info-img{
+    width: 150px;
+}
