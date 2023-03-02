@@ -2,8 +2,12 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
+//Context
+import { useDarkModeContext } from '../../context/DarkModeContext';
 
 const Contacto = () => {
+    const { darkMode } = useDarkModeContext()
+
     const datosFormulario = React.useRef()
     let navigate = useNavigate()
 
@@ -20,7 +24,7 @@ const Contacto = () => {
 
     return (
         <div className="d-flex justify-content-center my-5">
-            <form className="formulario" onSubmit={consultarFormulario} ref={datosFormulario}>
+            <form className={`${darkMode ? "formulario-dark" : "formulario"}`} onSubmit={consultarFormulario} ref={datosFormulario}>
                 <div className="mb-3">
                     <label htmlFor="nombre" className="form-label">Nombre y apellido:</label>
                     <input type="text" className="form-control formularioControl" name="nombre" required autocomplete="off"/>
@@ -43,7 +47,7 @@ const Contacto = () => {
                     <textarea className="form-control formularioControl textarea" name="textarea" rows={3} required autocomplete="off"/>
                 </div>
 
-                <button type="submit" className="btn button botonPrincipal">Enviar</button>
+                <button type="submit" className="btn button botonDetail btn-grad">Enviar</button>
             </form>
         </div>
     );

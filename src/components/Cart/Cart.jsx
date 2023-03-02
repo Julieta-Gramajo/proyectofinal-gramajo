@@ -3,29 +3,36 @@ import ItemList from "../ItemList/ItemList";
 
 import { useCarritoContext } from "../../context/CarritoContext";
 const Cart = () => {
-    const {carrito, totalPrice, emptyCart} = useCarritoContext()
+    const { carrito, totalPrice, emptyCart } = useCarritoContext()
     return (
         <>
-            {carrito.length === 0 
+            {carrito.length === 0
                 ?
-                <>
-                    <h2>Carrito vacío.</h2>
-                    <Link to={"/"}><button>Agrega un producto</button></Link>
-                </>
+                <div className="empty-cart">
+                    <h2>¡Carrito vacío!</h2>
+                    <h3>debes agregar agregar al menos 1 producto al carrito</h3>
+                    <button className="btn btn-grad my-5">
+                        <Link to={"/"} className="botonDetail">Agrega un producto</Link>
+                    </button>
+                </div>
                 :
-                <div className="contenedor">
-                    {<ItemList products={carrito} plantilla={"itemCart"}/>}
+                <div className="contenedor-cart">
+                    {<ItemList products={carrito} plantilla={"itemCart"} />}
 
 
-                    <div>
-                        <p>Resumen: $ {new Intl.NumberFormat("de-DE").format(totalPrice())}</p>
-                        <button type="button" className="btn btn-danger button mt-4 py-1 botonPrincipal mx-3" onClick={() => emptyCart()}>Vaciar carrito</button>
-                        <Link to={"/"}>
-                        <button type="button" className="btn button mt-4 py-1 botonPrincipal mx-3">Continuar comprando</button>
-                        </Link>
-                        <Link to={"/checkout"}>
-                        <button type="button" className="btn button mt-4 py-1 botonPrincipal mx-3">Finalizar compra</button>
-                        </Link>
+                    <div className="text-center my-5">
+                        <p className="cart-resumen">Total: $ {new Intl.NumberFormat("de-DE").format(totalPrice())}</p>
+
+                        <div className="d-flex my-5">
+                            <button type="button" className="btn btn-grad" onClick={() => emptyCart()}>Vaciar carrito</button>
+                            <button type="button" className="btn btn-grad">
+                                <Link to={"/"} className='botonDetail'>Continuar comprando</Link>
+                            </button>
+                            <button type="button" className="btn btn-grad">
+                                <Link to={"/checkout"} className='botonDetail'>Finalizar compra</Link>
+                            </button>
+                        </div>
+
                     </div>
                 </div>
             }

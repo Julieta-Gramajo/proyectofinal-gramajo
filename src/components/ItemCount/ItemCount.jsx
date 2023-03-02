@@ -13,14 +13,14 @@ export const ItemCount = ({ valInicial, stock, onAdd }) => {
     }
 
     return (
-        <div className="d-flex">
+        <div className="d-flex mt-3">
             <div className="d-flex align-items-center ">
-                <button type="button" className="btn botonPrincipal btnCount" onClick={() => restar()}>-</button>
+                <button type="button" className="btn boton-itemcount btnCount btn-grad" onClick={() => restar()}>-</button>
                 <p className="card-text mb-0 px-2">{contador}</p>
-                <button type="button" className="btn botonPrincipal btnCount" onClick={() => sumar()}>+</button>
+                <button type="button" className="btn boton-itemcount btnCount btn-grad" onClick={() => sumar()}>+</button>
             </div>
             <div>
-                <button type="button" className="btn botonPrincipal ms-4 btnCount" onClick={() => agregarCarrito()}>Agregar</button>
+                <button type="button" className="btn boton-itemcount ms-4 btnCount btn-grad" onClick={() => agregarCarrito()}>Agregar</button>
             </div>
         </div>
     );

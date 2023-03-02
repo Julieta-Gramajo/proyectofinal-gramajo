@@ -5,13 +5,13 @@ import { ToastContainer } from 'react-toastify';
 
 // components
 import Navbar from './Navbar/Navbar';
-import Carousel from './Carousel/Carousel';
 import ItemListContainer2 from './ItemListContainer2/ItemListContainer2';
 import ItemListContainer from './ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './ItemDetailContainer/ItemDetailContainer';
 import Contacto from './Contacto/Contacto';
 import Cart from './Cart/Cart';
 import Checkout from './Checkout/Checkout';
+import Footer from './Footer/Footer';
 import { cargarBDD } from '../firebase/firebase'; // Utilizar sólo para cargar productos en firebase
 
 //context
@@ -32,6 +32,7 @@ function App() {
               <Route path='/cart' element={<Cart />} />
               <Route path='/checkout' element={<Checkout />} />
             </Routes>
+            <Footer />
             <ToastContainer />
         </DarkModeProvider>
       </CarritoProvider>

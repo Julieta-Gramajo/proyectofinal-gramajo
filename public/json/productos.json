@@ -49,42 +49,30 @@
     },
     {
         "id": 5,
-        "idCategoria": 1,
-        "categoria": "pañales",
-        "marca": "Pampers®",
-        "nombre": "Grandecitos™",
-        "talle": "XXG",
-        "precio": 2699,
+        "idCategoria": 2,
+        "categoria": "mamaderas",
+        "marca": "Philips Avent",
+        "nombre": " Anticólicos Sistema Airfree",
+        "talle": "+1M",
+        "precio": 4599,
         "stock": 6,
-        "descripcion": "Para un ajuste como ropa interior, fácil para que tu niño o niña lo suba o lo baje. Fácil de poner y fácil de quitar. Contiene barreras antiderrames LeakGuard que ayudan a detener derrames donde más ocurren.",
-        "img": "https://firebasestorage.googleapis.com/v0/b/oliviababystore-reactjs.appspot.com/o/pampers-5.png?alt=media&token=96020024-45dd-4551-b40e-d42d2f04c7ce"
+        "descripcion": "El sistema AirFree™ está diseñado para ayudar al bebé a ingerir menos aire. La tetina permanece llena de leche, incluso en horizontal, para alimentar al bebé en posición erguida. La reducción del aire que un bebé ingiere puede ayudar a disminuir problemas comunes de alimentación, como cólicos, gases y reflujo.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/oliviababystore-reactjs.appspot.com/o/avent-1.png?alt=media&token=6ce66be3-4bca-44f5-92d6-bf559a54b594"
     },
     {
         "id": 6,
         "idCategoria": 2,
         "categoria": "mamaderas",
         "marca": "Philips Avent",
-        "nombre": " Anticólicos Sistema Airfree",
+        "nombre": "Anti-Colic",
         "talle": "+1M",
-        "precio": 3299,
+        "precio": 5199,
         "stock": 6,
-        "descripcion": "El sistema AirFree™ está diseñado para ayudar al bebé a ingerir menos aire. La tetina permanece llena de leche, incluso en horizontal, para alimentar al bebé en posición erguida. La reducción del aire que un bebé ingiere puede ayudar a disminuir problemas comunes de alimentación, como cólicos, gases y reflujo.",
-        "img": "https://firebasestorage.googleapis.com/v0/b/oliviababystore-reactjs.appspot.com/o/avent-1.png?alt=media&token=6ce66be3-4bca-44f5-92d6-bf559a54b594"
+        "descripcion": "Diseñamos nuestra mamadera anticólicos para evitar que el aire entre en la pancita del bebé y así reducir los cólicos, las molestias y las interrupciones durante la alimentación. Gracias a su válvula anticólicos integrada, el aire no entra en la pancita del bebé.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/oliviababystore-reactjs.appspot.com/o/avent-2.png?alt=media&token=9367b2c2-ce2d-4cb7-a9f1-bc6db02750c5"
     },
     {
         "id": 7,
-        "idCategoria": 2,
-        "categoria": "mamaderas",
-        "marca": "Philips Avent",
-        "nombre": "Vaso de entrenamiento Natural",
-        "talle": "+4M",
-        "precio": 5499,
-        "stock": 6,
-        "descripcion": "Nuestro nuevo kit de transición de mamadera a vaso de entrenamiento Natural facilita la transición del bebé de la mamadera al vaso. Con los mangos suaves al tacto, el bebé podrá sujetar la mamadera de manera independiente mientras bebe de la tetina familiar.",
-        "img": "https://firebasestorage.googleapis.com/v0/b/oliviababystore-reactjs.appspot.com/o/avent-2.png?alt=media&token=47e0d7aa-3032-4202-9383-320406b1afb0"
-    },
-    {
-        "id": 8,
         "idCategoria": 2,
         "categoria": "mamaderas",
         "marca": "Philips Avent",
@@ -96,7 +84,7 @@
         "img": "https://firebasestorage.googleapis.com/v0/b/oliviababystore-reactjs.appspot.com/o/avent-3.png?alt=media&token=ed54bbb0-68a2-44b5-9404-b564c00cf066"
     },
     {
-        "id": 9,
+        "id": 8,
         "idCategoria": 2,
         "categoria": "mamaderas",
         "marca": "Philips Avent",
@@ -108,43 +96,31 @@
         "img": "https://firebasestorage.googleapis.com/v0/b/oliviababystore-reactjs.appspot.com/o/avent-4.png?alt=media&token=62330bb2-a076-4c17-9234-de0a62c11a9a"
     },
     {
-        "id": 10,
-        "idCategoria": 2,
-        "categoria": "mamaderas",
-        "marca": "Philips Avent",
-        "nombre": "Anti-Colic",
-        "talle": "+1M",
-        "precio": 2399,
-        "stock": 6,
-        "descripcion": "Diseñamos nuestra mamadera anticólicos para evitar que el aire entre en la pancita del bebé y así reducir los cólicos, las molestias y las interrupciones durante la alimentación. Gracias a su válvula anticólicos integrada, el aire no entra en la pancita del bebé.",
-        "img": "https://firebasestorage.googleapis.com/v0/b/oliviababystore-reactjs.appspot.com/o/avent-5.png?alt=media&token=c2b92898-33c8-43af-bba8-6d0fbda0d803"
-    },
-    {
-        "id": 11,
+        "id": 9,
         "idCategoria": 3,
         "categoria": "chupetes",
         "marca": "Philips Avent",
-        "nombre": "Ultra air x2",
-        "talle": "+18M",
-        "precio": 3899,
+        "nombre": "Ultra air ",
+        "talle": "+0M",
+        "precio": 2299,
         "stock": 6,
-        "descripcion": "Calme a su bebé con un chupete que deja respirar la piel y contribuye al desarrollo bucal saludable. ultra air para edades de más de 18 meses cuenta con orificios para el aire extragrandes que mantienen la piel sensible suave y seca, y una tetina extrafirme para dientes y encías en crecimiento.",
+        "descripcion": "Tranquilice a su bebé con un chupete que permite que su piel respire. La colección ultra air de Philips Avent tiene orificios de gran tamaño para mantener la piel seca. Su cubierta liviana está diseñada para un flujo máximo de aire. Está disponible en varios colores y diseños.",
         "img": "https://firebasestorage.googleapis.com/v0/b/oliviababystore-reactjs.appspot.com/o/chupete-1.png?alt=media&token=e982d876-8cdc-4b86-874c-507f492b926a"
     },
     {
-        "id": 12,
+        "id": 10,
         "idCategoria": 3,
         "categoria": "chupetes",
         "marca": "Philips Avent",
-        "nombre": "Ultra air x2",
-        "talle": "+18M",
-        "precio": 3899,
+        "nombre": "Ultra air",
+        "talle": "+6M",
+        "precio": 2299,
         "stock": 6,
-        "descripcion": "Calme a su bebé con un chupete que deja respirar la piel y contribuye al desarrollo bucal saludable. ultra air para edades de más de 18 meses cuenta con orificios para el aire extragrandes que mantienen la piel sensible suave y seca, y una tetina extrafirme para dientes y encías en crecimiento.",
+        "descripcion": "Tranquilice a su bebé con un chupete que permite que su piel respire. La colección ultra air de Philips Avent tiene orificios de gran tamaño para mantener la piel seca. Su cubierta liviana está diseñada para un flujo máximo de aire. Está disponible en varios colores y diseños.",
         "img": "https://firebasestorage.googleapis.com/v0/b/oliviababystore-reactjs.appspot.com/o/chupete-2.png?alt=media&token=9ab20d8f-76fb-4c96-bb17-1edc169383b4"
     },
     {
-        "id": 13,
+        "id": 11,
         "idCategoria": 3,
         "categoria": "chupetes",
         "marca": "Philips Avent",
@@ -156,27 +132,15 @@
         "img": "https://firebasestorage.googleapis.com/v0/b/oliviababystore-reactjs.appspot.com/o/chupete-3.png?alt=media&token=c28f7395-b677-498d-9aa5-3e0ce45b1de6"
     },
     {
-        "id": 14,
-        "idCategoria": 3,
-        "categoria": "chupetes",
-        "marca": "Soothie",
-        "nombre": "Soothie",
-        "talle": "+0M",
-        "precio": 3799,
-        "stock": 6,
-        "descripcion": "El chupete Soothie de Philips Avent está diseñado en torno a los contornos naturales del rostro de su bebé. Su protector curvo en forma de corazón no golpeará su pequeña nariz. Fabricado con silicona de uso médico, el chupete Soothie se distribuye en hospitales de toda Europa*",
-        "img": "https://firebasestorage.googleapis.com/v0/b/oliviababystore-reactjs.appspot.com/o/chupete-4.png?alt=media&token=d2bb29e7-fae2-4d54-82fb-a4c769390938"
-    },
-    {
-        "id": 15,
+        "id": 12,
         "idCategoria": 3,
         "categoria": "chupetes",
         "marca": "Philips Avent",
-        "nombre": "Ultra Soft",
+        "nombre": "Ultra Air Osito",
         "talle": "+0M",
-        "precio": 4499,
+        "precio": 2299,
         "stock": 6,
-        "descripcion": "Cuide la piel sensible de su bebé con el chupete ultrasuave de Philips Avent. Nuestra cubierta flexible y súper suave* se adapta a las curvas de las mejillas de su bebé, por lo que deja menos marcas e irritación para brindar una relajación más cómoda.",
-        "img": "https://firebasestorage.googleapis.com/v0/b/oliviababystore-reactjs.appspot.com/o/chupete-5.png?alt=media&token=c0edeb57-bcab-495b-a4a5-502af254245c"
+        "descripcion": "Calme a su bebé con un chupete que deja respirar la piel. Philips Avent ultra air cuenta con orificios extragrandes que mantienen la piel seca. Su protector ligero está diseñado para brindar el máximo flujo de aire. Disponible en varios colores y diseños.",
+        "img": "https://firebasestorage.googleapis.com/v0/b/oliviababystore-reactjs.appspot.com/o/chupete-4.png?alt=media&token=d2bb29e7-fae2-4d54-82fb-a4c769390938"
     }
 ]

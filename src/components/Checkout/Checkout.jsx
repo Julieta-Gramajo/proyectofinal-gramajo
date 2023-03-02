@@ -1,11 +1,16 @@
 import React from "react";
-import { useCarritoContext } from "../../context/CarritoContext";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { createOrdenCompra, getProducto, updateProducto } from "../../firebase/firebase";
 
+//Context
+import { useDarkModeContext } from '../../context/DarkModeContext';
+import { useCarritoContext } from "../../context/CarritoContext";
+
 const Checkout = () => {
+    const { darkMode } = useDarkModeContext()
+
     const { carrito, emptyCart, totalPrice } = useCarritoContext()
     const datosFormulario = React.useRef()
     let navigate = useNavigate()
@@ -42,7 +47,7 @@ const Checkout = () => {
                 </>
                 :
                 <div className="d-flex justify-content-center my-5">
-                    <form className="formulario" onSubmit={consultarFormulario} ref={datosFormulario}>
+                    <form className={`${darkMode ? "formulario-dark" : "formulario"}`} onSubmit={consultarFormulario} refgit status={datosFormulario}>
                         <div className="mb-3">
                             <label htmlFor="nombre" className="form-label">Nombre y apellido:</label>
                             <input type="text" className="form-control formularioControl" name="nombre" required autocomplete="off" />
@@ -70,7 +75,7 @@ const Checkout = () => {
 
                         <div className="form-text my-3">Nunca compartiremos tus datos personales.</div>
 
-                        <button type="submit" className="btn button botonPrincipal">Finalizar compra</button>
+                        <button type="submit" className="btn button btn-grad">Finalizar compra</button>
                     </form>
                 </div>
             }

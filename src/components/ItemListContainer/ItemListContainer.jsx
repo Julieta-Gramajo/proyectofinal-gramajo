@@ -3,10 +3,7 @@ import { useParams } from "react-router-dom";
 
 //Components
 import ItemList from "../ItemList/ItemList";
-import Carousel from "../Carousel/Carousel";
-
-//Context
-import { useDarkModeContext } from "../../context/DarkModeContext";
+import Title from "../Title/Title";
 
 //Firebase
 import { getProductos } from "../../firebase/firebase";
@@ -14,8 +11,6 @@ import { getProductos } from "../../firebase/firebase";
 const ItemListContainer = () => {
     const [productos, setProductos] = useState([])
     const { categoria } = useParams()
-    const { darkMode } = useDarkModeContext()
-    console.log(darkMode)
 
     useEffect(() => {
         if (categoria) {
@@ -40,8 +35,8 @@ const ItemListContainer = () => {
 
     return (
         <>  
-            <Carousel />
             <div className="row justify-content-center">
+                <Title />
                 {productos}
             </div>
         </>

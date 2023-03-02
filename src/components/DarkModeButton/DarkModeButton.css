@@ -19,14 +19,6 @@
   .toggle-theme input {
     display: none;
   }
-
-  .sun{
-    font-size: 50px;
-  }
-
-  .moon{
-    font-size: 50px;
-  }
   
   .slider {
     background-color: #ccc;
@@ -64,4 +56,8 @@
   
   .slider.round:before {
     border-radius: 50%;
+  }
+
+  .moon{
+    width: 29px;
   }

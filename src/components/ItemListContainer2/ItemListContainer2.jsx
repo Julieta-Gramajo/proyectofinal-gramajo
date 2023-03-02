@@ -39,7 +39,7 @@ const ItemListContainer2 = () => {
 
     return (
         <>  
-            <div className="row justify-content-center">
+            <div className="row justify-content-center my-5">
                 {productos}
             </div>
         </>
