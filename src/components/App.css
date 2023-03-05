@@ -253,7 +253,7 @@ margin-right: 150px;
 .formularioControl {
     background-color: #F1D4CE;
     height: 40px;
-    width: 300px;
+    width: 380px;
     padding: 20px;
 }
 
@@ -281,11 +281,16 @@ margin-right: 150px;
 
 .validacion-wrong{
     color: #eb0505;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
 }
 
 .validacion-wrong span{
     text-transform: uppercase;
-    font-weight: bold;
+}
+
+.lista-checkout{
+    text-decoration: none;
 }
 /* ITEM COUNT */
 

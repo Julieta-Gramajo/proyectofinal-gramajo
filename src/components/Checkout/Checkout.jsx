@@ -39,20 +39,20 @@ const Checkout = () => {
                     text: `Su orden <b>${ordenCompra.id}</b> por <b>$${new Intl.NumberFormat("de-DE").format(totalPrice())}</b> fue realizada con éxito.`,
                     icon: 'success',
                     confirmButtonText: 'Cerrar'
-                  })
+                })
                 emptyCart()
                 e.target.reset()
                 navigate("/")
             })
         }
 
-        else{
+        else {
             Swal.fire({
                 title: '¡Error!',
                 text: 'Los datos no se han completado de forma correcta.',
                 icon: 'error',
                 confirmButtonText: 'Reintentar'
-              })
+            })
         }
     }
 
@@ -71,7 +71,7 @@ const Checkout = () => {
                     <form className={`${darkMode ? "formulario-dark" : "formulario"}`} onSubmit={consultarFormulario} refgit status={datosFormulario}>
                         <div className="mb-3">
                             <label htmlFor="nombre" className="form-label">Nombre y apellido:</label>
-                            <input type="text" className="form-control formularioControl" name="nombre" required autocomplete="off" />
+                            <input type="text" className="form-control formularioControl" name="nombre" pattern="^[a-zA-Z]+" required autocomplete="off" />
                         </div>
 
                         <div className="mb-3">
@@ -101,7 +101,7 @@ const Checkout = () => {
                                     }
                                 }} />
 
-                            <p className={`${validado ? "validacion-ok" : "validacion-wrong"}`}>Los emails <span>no</span> son iguales.</p>
+                            <p className={`${validado ? "validacion-ok" : "validacion-wrong"}`}>🚩 Los emails <span>no</span> son iguales.</p>
                         </div>
 
                         <div className="mb-3">
@@ -116,7 +116,12 @@ const Checkout = () => {
 
                         <div className="form-text my-3">Nunca compartiremos tus datos personales.</div>
 
-                        <button type="submit" className="btn button btn-grad">Finalizar compra</button>
+                        <div className="d-flex">
+                            <button type="submit" className="btn button btn-grad">Finalizar compra</button>
+                            <Link to={"/cart"} className="lista-checkout">
+                                <button type="submit" className="btn button btn-grad">Revisar carrito</button>
+                            </Link>
+                        </div>
                     </form>
                 </div>
             }
