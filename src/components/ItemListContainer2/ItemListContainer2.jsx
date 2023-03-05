@@ -5,16 +5,12 @@ import { useParams } from "react-router-dom";
 import ItemList from "../ItemList/ItemList";
 import Title from "../Title/Title";
 
-//Context
-import { useDarkModeContext } from "../../context/DarkModeContext";
-
 //Firebase
 import { getProductos } from "../../firebase/firebase";
 
 const ItemListContainer2 = ({mensaje}) => {
     const [productos, setProductos] = useState([])
     const { categoria } = useParams()
-    const { darkMode } = useDarkModeContext()
 
     useEffect(() => {
         if (categoria) {
