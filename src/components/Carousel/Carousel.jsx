@@ -2,7 +2,7 @@ import React from 'react';
 
 const Carousel = () => {
     return (
-        <div id="carouselExampleSlidesOnly" className="carousel slide mb-5" data-bs-ride="carousel">
+        <div id="carouselExampleSlidesOnly" className="carousel slide mb-3" data-bs-ride="carousel">
             <div className="carousel-inner">
                 <div className="carousel-item active">
                     <img src="https://firebasestorage.googleapis.com/v0/b/oliviababystore-reactjs.appspot.com/o/Banner-1.png?alt=media&token=183eda47-ccb0-429a-8489-4ea94385bc8d" className="d-block w-100" alt="..." />

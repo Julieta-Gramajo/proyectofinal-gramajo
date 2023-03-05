@@ -8,27 +8,7 @@
     box-sizing: border-box;
 }
 
-.overflow{
-    overflow-x: hidden;
-}
-
-.main__texto2 {
-    background-color:  #e89393;
-    backdrop-filter: blur(0);
-    border: none;
-    color: #FFFFFF;
-    text-align: center;
-}
-
-@keyframes texto {
-    from {
-        transform: translateX(100%);
-    }
-
-    to {
-        transform: translateX(-100%);
-    }
-}
+/* CAROUSEL HEADER */
 
 .carousel-text {
     background-color: #e89393;
@@ -39,6 +19,8 @@
     color: #FFFFFF;
     padding-left: 62px;
 }
+
+/* H1 PARPADEO */
 
 .parpadea {
     animation: parpadeo 5s linear infinite;
@@ -65,11 +47,12 @@
     padding-left: 15px;
     backdrop-filter: blur(20px);
     border: solid 1px rgba(234, 199, 199, 0.9);
-    border-radius: 5px;
     font-size: 50px;
     color: #FFF;
     text-transform: uppercase;
 }
+
+/* NAVBAR */
 
 .icon {
     width: 45px;
@@ -442,8 +425,3 @@ p {
     padding: 30px;
     color: #FFFFFF;
 }
-
-.row>* {
-    padding-right: 0;
-}
-
