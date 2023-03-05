@@ -9,7 +9,7 @@ const ItemCart = ({item}) => {
     )
     return (
         <div className={`my-5 ${darkMode ? "item-cart-dark" : "item-cart"}`}>
-            <div className="me-5 my-4">
+            <div className="pe-5 my-4">
                 <img src={item.img} width={100} alt={`Imagen de ${item.categoria} ${item.marca} ${item.nombre}`} />
             </div>
             <div>
