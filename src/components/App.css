@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 /* CAROUSEL HEADER */
@@ -147,6 +148,10 @@ ul {
     width: 200px;
 }
 
+.list-navbar{
+    margin-left: 40px;
+}
+
 /* ITEM DETAIL */
 
 .encabezado {
@@ -222,7 +227,6 @@ margin-right: 150px;
 }
 
 .item-p-1{
-    height: 50px;
     margin-bottom: 30px;
 }
 

@@ -9,7 +9,6 @@ const List = () => {
 
     return (
         <ul className="d-flex mt-5 mb-3">
-            
             <li className="lista secciones">
                 <Link className={` ${darkMode ? "lista-dark" : "lista"}`} to={"/"}>inicio</Link>
                 <img className="hover" src={"https://firebasestorage.googleapis.com/v0/b/oliviababystore-reactjs.appspot.com/o/hover.png?alt=media&token=77e8a4a7-3364-40b5-99ec-77514beba1d9"} alt={"logo"} />

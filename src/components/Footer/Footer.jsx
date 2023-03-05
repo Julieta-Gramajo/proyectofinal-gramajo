@@ -5,10 +5,10 @@ const Footer = () => {
     return (
         <div className='footer d-flex justify-content-around py-2'>
             <button className='btn btn-grad-footer'>
-                <Link className='lista' to={`https://github.com/Julieta-Gramajo`}>Visitame en Github</Link>
+                <Link className='lista' to={`https://github.com/Julieta-Gramajo`} target="_blank">Visitame en Github</Link>
             </button>
             <button className='btn btn-grad-footer'>
-                <Link className='lista' to={`https://www.linkedin.com/in/emilse-julieta-gramajo/`}>Visitame en LinkedIn</Link>
+                <Link className='lista' to={`https://www.linkedin.com/in/emilse-julieta-gramajo/`} target="_blank">Visitame en LinkedIn</Link>
             </button>
         </div>
     );

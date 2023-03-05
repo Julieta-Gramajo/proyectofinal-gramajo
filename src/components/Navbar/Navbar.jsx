@@ -7,13 +7,10 @@ import List from '../List/List';
 
 const NavBar = () => {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light d-block p-0">
+        <nav className="navbar-light w-100 p-0">
             <Slider />
             <Presentation />
-            <div className="container-fluid d-flex justify-content-center ms-4">
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon" />
-                </button>
+            <div className="d-flex justify-content-center list-navbar">
                 <List />
             </div>
         </nav>
