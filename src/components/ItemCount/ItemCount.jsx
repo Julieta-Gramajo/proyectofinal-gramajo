@@ -9,7 +9,31 @@ export const ItemCount = ({ valInicial, stock, onAdd }) => {
     const restar = () => (contador > valInicial) && setContador(contador - 1)
     const agregarCarrito = () => {
         onAdd(contador)
-        toast.success(`¡Agregaste ${contador} unidades al carrito!`)
+        if(contador > 1){
+            toast(`👶🏻 ¡Agregaste ${contador} unidades al carrito!`, {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+                });
+        }
+        else{
+            toast(`👶🏻 ¡Agregaste ${contador} unidad al carrito!`, {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+                });
+        }
+        
     }
 
     return (

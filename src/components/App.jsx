@@ -25,9 +25,9 @@ function App() {
         <DarkModeProvider>
           <Navbar />
           <Routes>
-              <Route path='/' element={<ItemListContainer />} />
+              <Route path='/' element={<ItemListContainer mensaje={"🤍👶🏻 Estas viendo todos los productos 👶🏻🤍"}/>} />
               <Route path='/item/:id' element={<ItemDetailContainer />} />
-              <Route path='/category/:categoria' element={<ItemListContainer2 />} />
+              <Route path='/category/:categoria' element={<ItemListContainer2 mensaje={"🤍👶🏻 Estas viendo por categorias 👶🏻🤍"}/>} />
               <Route path='/contacto' element={<Contacto />} />
               <Route path='/cart' element={<Cart />} />
               <Route path='/checkout' element={<Checkout />} />

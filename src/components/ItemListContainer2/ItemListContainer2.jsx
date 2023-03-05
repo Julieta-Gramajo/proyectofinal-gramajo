@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 
 //Components
 import ItemList from "../ItemList/ItemList";
+import Title from "../Title/Title";
 
 //Context
 import { useDarkModeContext } from "../../context/DarkModeContext";
@@ -10,7 +11,7 @@ import { useDarkModeContext } from "../../context/DarkModeContext";
 //Firebase
 import { getProductos } from "../../firebase/firebase";
 
-const ItemListContainer2 = () => {
+const ItemListContainer2 = ({mensaje}) => {
     const [productos, setProductos] = useState([])
     const { categoria } = useParams()
     const { darkMode } = useDarkModeContext()
@@ -38,8 +39,9 @@ const ItemListContainer2 = () => {
 
 
     return (
-        <>  
+        <>
             <div className="row justify-content-center my-5">
+                <Title title={mensaje}/>
                 {productos}
             </div>
         </>

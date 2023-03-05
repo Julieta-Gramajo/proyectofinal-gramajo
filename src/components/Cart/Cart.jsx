@@ -1,20 +1,25 @@
 import { Link } from "react-router-dom";
+
+// Components
 import ItemList from "../ItemList/ItemList";
 
 import { useCarritoContext } from "../../context/CarritoContext";
 const Cart = () => {
     const { carrito, totalPrice, emptyCart } = useCarritoContext()
+
     return (
         <>
             {carrito.length === 0
                 ?
-                <div className="empty-cart">
-                    <h2>¡Carrito vacío!</h2>
-                    <h3>debes agregar agregar al menos 1 producto al carrito</h3>
-                    <button className="btn btn-grad my-5">
-                        <Link to={"/"} className="botonDetail">Agrega un producto</Link>
-                    </button>
-                </div>
+                <>
+                    < div className="empty-cart">
+                        <h2>💔 ¡Carrito vacío! 💔</h2>
+                        <h3>debes agregar agregar al menos 1 producto al carrito</h3>
+                        <button className="btn btn-grad my-5">
+                            <Link to={"/"} className="botonDetail">Agrega un producto</Link>
+                        </button>
+                    </div >
+                </>
                 :
                 <div className="contenedor-cart">
                     {<ItemList products={carrito} plantilla={"itemCart"} />}

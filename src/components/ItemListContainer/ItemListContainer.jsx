@@ -4,11 +4,12 @@ import { useParams } from "react-router-dom";
 //Components
 import ItemList from "../ItemList/ItemList";
 import Title from "../Title/Title";
+import Carousel from "../Carousel/Carousel";
 
 //Firebase
 import { getProductos } from "../../firebase/firebase";
 
-const ItemListContainer = () => {
+const ItemListContainer = ({mensaje}) => {
     const [productos, setProductos] = useState([])
     const { categoria } = useParams()
 
@@ -36,7 +37,8 @@ const ItemListContainer = () => {
     return (
         <>  
             <div className="row justify-content-center">
-                <Title />
+                <Carousel />
+                <Title title={mensaje}/>
                 {productos}
             </div>
         </>

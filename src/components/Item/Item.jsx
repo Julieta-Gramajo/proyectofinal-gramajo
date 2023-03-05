@@ -10,8 +10,8 @@ const Item = ({ item }) => {
         <div className={`mt-3 mb-5 mx-5 ${darkMode ? "item-container-dark" : "item-container"}`}>
             <img src={item.img} className="card-img-top" alt={`Imagen de ${item.categoria} ${item.marca} ${item.nombre}`} />
             <div className="item-p">
-                <p className="my-4 item-p-1">{item.marca} {item.nombre} {item.talle}</p>
-                <p className="mt-5 mb-3 item-p-2">${new Intl.NumberFormat("de-DE").format(item.precio)}</p>
+                <p className="item-p-1">{item.marca} {item.nombre} {item.talle}</p>
+                <p className="item-p-2">${new Intl.NumberFormat("de-DE").format(item.precio)}</p>
             </div>
             <button type="button" className="btn button btn-grad item-button aparicion-info-item" >
                 <Link className='botonDetail' to={`/item/${item.id}`}>Ver producto</Link>

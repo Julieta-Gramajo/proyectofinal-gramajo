@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Title = () => {
+const Title = ({title}) => {
     return (
         <>
-            <div class="parpadea text-center">
-                <h2 className='parpadea-text'>Conocé todos nuestros productos</h2>
+            <div className="parpadea text-center">
+                <h2 className='parpadea-text'>{title}</h2>
             </div>
         </>
     );

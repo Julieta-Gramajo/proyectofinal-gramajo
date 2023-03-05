@@ -8,13 +8,15 @@
     box-sizing: border-box;
 }
 
+.overflow{
+    overflow-x: hidden;
+}
+
 .main__texto2 {
     background-color:  #e89393;
     backdrop-filter: blur(0);
     border: none;
     color: #FFFFFF;
-    transform: translateX(100%);
-    animation: texto 20s linear infinite;
     text-align: center;
 }
 
@@ -28,11 +30,14 @@
     }
 }
 
-.carouselText {
+.carousel-text {
     background-color: #e89393;
     letter-spacing: 1px;
     text-transform: uppercase;
     font-family: 'Tilt Warp', cursive;
+    text-align: center;
+    color: #FFFFFF;
+    padding-left: 62px;
 }
 
 .parpadea {
@@ -235,6 +240,7 @@ margin-right: 150px;
 
 .item-p-1{
     height: 50px;
+    margin-bottom: 30px;
 }
 
 .item-p-2{
@@ -269,6 +275,18 @@ margin-right: 150px;
     height: 150px;
 }
 
+.validacion-ok{
+    display: none;
+}
+
+.validacion-wrong{
+    color: #eb0505;
+}
+
+.validacion-wrong span{
+    text-transform: uppercase;
+    font-weight: bold;
+}
 /* ITEM COUNT */
 
 .boton-itemcount{
