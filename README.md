@@ -21,9 +21,9 @@ Se abrirá en una pestaña de tu navegador o puedes copiar y pegar la siguiente 
 
 ### Composición
 
-_El proyecto está formado por 24 componentes en donde se implementa el uso de 2 context.
+El proyecto está formado por 24 componentes en donde se implementa el uso de 2 context.
 
-Al tratarse de un ecommerse, los objetos se encuentran subido a Firebase utilizando la Firestore y su Storage._
+Al tratarse de un ecommerse, los objetos se encuentran subido a Firebase utilizando la Firestore y su Storage.
 
 
 
