@@ -15,7 +15,6 @@ const ItemListContainer2 = ({mensaje}) => {
     const [productos, setProductos] = useState([])
     const { categoria } = useParams()
     const { darkMode } = useDarkModeContext()
-    console.log(darkMode)
 
     useEffect(() => {
         if (categoria) {

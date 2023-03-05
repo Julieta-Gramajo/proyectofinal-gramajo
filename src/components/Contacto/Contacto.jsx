@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { toast } from 'react-toastify';
+import Swal from 'sweetalert2';
 
 //Context
 import { useDarkModeContext } from '../../context/DarkModeContext';
@@ -18,7 +18,13 @@ const Contacto = () => {
         const contacto = Object.fromEntries(datForm)
         console.log(contacto)
         e.target.reset()
-        toast("🦄 Gracias por contactarnos. En breve recibirá su respuesta.")
+        Swal.fire({
+            title: '💌 ¡Gracias por tu contacto! 💌',
+            text: "Recibirás tu respuesta a la brevedad posible",
+            icon: 'success',
+            confirmButtonText: 'Cerrar',
+            confirmButtonColor: "#FF77AB"
+        })
         navigate("/")
     }
 
@@ -27,24 +33,24 @@ const Contacto = () => {
             <form className={`${darkMode ? "formulario-dark" : "formulario"}`} onSubmit={consultarFormulario} ref={datosFormulario}>
                 <div className="mb-3">
                     <label htmlFor="nombre" className="form-label">Nombre y apellido:</label>
-                    <input type="text" className="form-control formularioControl" name="nombre" required autocomplete="off"/>
+                    <input type="text" className="form-control formularioControl" name="nombre" required autoComplete="off"/>
                 </div>
 
                 <div className="mb-3">
                     <label htmlFor="email" className="form-label">Email:</label>
-                    <input type="email" className="form-control formularioControl" name="email" required autocomplete="off"/>
+                    <input type="email" className="form-control formularioControl" name="email" required autoComplete="off"/>
                     <div className="form-text">Nunca compartiremos tu email.</div>
                 </div>
 
                 <div className="mb-3">
                     <label htmlFor="telefono" className="form-label">Teléfono:</label>
-                    <input type="number" className="form-control formularioControl" name="telefono" required autocomplete="off"/>
+                    <input type="number" className="form-control formularioControl" name="telefono" required autoComplete="off"/>
                     <div className="form-text">Nunca compartiremos tu teléfono.</div>
                 </div>
 
                 <div className="mb-3">
                     <label htmlFor="textarea" className="form-label">Escribe aquí tu mensaje:</label>
-                    <textarea className="form-control formularioControl textarea" name="textarea" rows={3} required autocomplete="off"/>
+                    <textarea className="form-control formularioControl textarea" name="textarea" rows={3} required autoComplete="off"/>
                 </div>
 
                 <button type="submit" className="btn button botonDetail btn-grad">Enviar</button>

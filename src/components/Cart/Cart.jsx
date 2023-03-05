@@ -29,7 +29,9 @@ const Cart = () => {
                         <p className="cart-resumen">Total: $ {new Intl.NumberFormat("de-DE").format(totalPrice())}</p>
 
                         <div className="d-flex my-5">
-                            <button type="button" className="btn btn-grad" onClick={() => emptyCart()}>Vaciar carrito</button>
+                            <button type="button" className="btn btn-grad" onClick={() => emptyCart()}>
+                                <Link className='botonDetail'>Vaciar carrito</Link>
+                            </button>
                             <button type="button" className="btn btn-grad">
                                 <Link to={"/"} className='botonDetail'>Continuar comprando</Link>
                             </button>

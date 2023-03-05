@@ -16,7 +16,7 @@ const Checkout = () => {
     let navigate = useNavigate()
     const [email, setEmail] = useState(" ")
     const [repEmail, setRepEmail] = useState(" ")
-    const [validado, setValidado] = useState(true)
+    const [validado, setValidado] = useState(" ")
 
     const consultarFormulario = (e) => {
         e.preventDefault()
@@ -38,7 +38,8 @@ const Checkout = () => {
                     title: '💖 ¡Muchas gracias por tu compra! 💖',
                     text: `Su orden <b>${ordenCompra.id}</b> por <b>$${new Intl.NumberFormat("de-DE").format(totalPrice())}</b> fue realizada con éxito.`,
                     icon: 'success',
-                    confirmButtonText: 'Cerrar'
+                    confirmButtonText: 'Cerrar',
+                    confirmButtonColor: "#FF77AB"
                 })
                 emptyCart()
                 e.target.reset()
@@ -51,7 +52,8 @@ const Checkout = () => {
                 title: '¡Error!',
                 text: 'Los datos no se han completado de forma correcta.',
                 icon: 'error',
-                confirmButtonText: 'Reintentar'
+                confirmButtonText: 'Reintentar',
+                confirmButtonColor: "#FF77AB"
             })
         }
     }
@@ -61,8 +63,13 @@ const Checkout = () => {
             {carrito.length === 0
                 ?
                 <>
-                    <h2>Carrito vacío.</h2>
-                    <Link to={"/"}><button>Agrega un producto</button></Link>
+                    <div className="empty-cart">
+                        <h2>💔 ¡Carrito vacío! 💔</h2>
+                        <h3>debes agregar agregar al menos 1 producto al carrito</h3>
+                        <button className="btn btn-grad my-5">
+                            <Link to={"/"} className="botonDetail">Agrega un producto</Link>
+                        </button>
+                    </div >
                 </>
                 :
                 <div className="d-flex flex-column justify-content-center align-items-center my-5">
@@ -71,12 +78,12 @@ const Checkout = () => {
                     <form className={`${darkMode ? "formulario-dark" : "formulario"}`} onSubmit={consultarFormulario} refgit status={datosFormulario}>
                         <div className="mb-3">
                             <label htmlFor="nombre" className="form-label">Nombre y apellido:</label>
-                            <input type="text" className="form-control formularioControl" name="nombre" pattern="^[a-zA-Z]+" required autocomplete="off" />
+                            <input type="text" className="form-control formularioControl" name="nombre" required autoComplete="off" />
                         </div>
 
                         <div className="mb-3">
                             <label htmlFor="email" className="form-label">Email:</label>
-                            <input type="email" className="form-control formularioControl" name="email" required autocomplete="off"
+                            <input type="email" className="form-control formularioControl" name="email" required autoComplete="off"
                                 onChange={(e) => {
                                     setEmail(e.target.value)
                                     if (e.target.value === repEmail) {
@@ -90,7 +97,7 @@ const Checkout = () => {
 
                         <div className="mb-3">
                             <label htmlFor="repEmail" className="form-label">Repetir email:</label>
-                            <input type="email" className="form-control formularioControl" name="repEmail" required autocomplete="off"
+                            <input type="email" className="form-control formularioControl" name="repEmail" required autoComplete="off"
                                 onChange={(e) => {
                                     setRepEmail(e.target.value)
                                     if (e.target.value === email) {
@@ -106,12 +113,12 @@ const Checkout = () => {
 
                         <div className="mb-3">
                             <label htmlFor="telefono" className="form-label">Teléfono:</label>
-                            <input type="number" className="form-control formularioControl" name="telefono" required autocomplete="off" />
+                            <input type="number" className="form-control formularioControl" name="telefono" required autoComplete="off" />
                         </div>
 
                         <div className="mb-3">
                             <label htmlFor="direccion" className="form-label">Dirección:</label>
-                            <input type="text" className="form-control formularioControl" name="direccion" required autocomplete="off" />
+                            <input type="text" className="form-control formularioControl" name="direccion" required autoComplete="off" />
                         </div>
 
                         <div className="form-text my-3">Nunca compartiremos tus datos personales.</div>
