@@ -1,16 +1,19 @@
 # Olivia baby store - Ecommerce
 
-_¡Hola! 🙋🏻‍♀️
-Este es el Proyecto que realicé durante el curso de React JS en la academía Coderhouse 👩🏻‍💻_
+¡Hola! 🙋🏻‍♀️
+
+Este es el Proyecto que realicé durante el curso de React JS en la academía Coderhouse 👩🏻‍💻
 
 ## Requerimentos
 
-_Antes de inicializarlo, debes instalar las dependencias_
+Antes de inicializarlo, debes instalar las dependencias.
+
 🔹 Utiliza _npm i_ para instalar las dependencias del package.json
 
 ## Ejecución
 
-Para ejecutarlo, escribe en la consola _npm start_
+Para ejecutarlo, escribe en la consola _npm start._
+
 Se abrirá en una pestaña de tu navegador o puedes copiar y pegar la siguiente ruta http://localhost:3000 en tu navegador.
 
 🔹 Dale unos minutos a que cargue de forma correcta y no te desesperes. 👀
@@ -19,6 +22,7 @@ Se abrirá en una pestaña de tu navegador o puedes copiar y pegar la siguiente 
 ### Composición
 
 _El proyecto está formado por 24 componentes en donde se implementa el uso de 2 context.
+
 Al tratarse de un ecommerse, los objetos se encuentran subido a Firebase utilizando la Firestore y su Storage._
 
 
