@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app";
 import { getFirestore, collection, doc, addDoc, getDoc, getDocs, updateDoc, deleteDoc } from 'firebase/firestore'
 
 const firebaseConfig = {
-  apiKey: "AIzaSyB8t5ATrJ2_f4nCWhJWj88PLK3097jVxqU",
+  apiKey: process.env.API_KEY,
   authDomain: "oliviababystore-reactjs.firebaseapp.com",
   projectId: "oliviababystore-reactjs",
   storageBucket: "oliviababystore-reactjs.appspot.com",
